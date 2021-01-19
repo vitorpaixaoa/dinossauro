@@ -1,0 +1,111 @@
+
+body{
+    background-color: #fafafa;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    
+    font-family: "ＭＳ Ｐゴシック";
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+
+.dino{
+    width: 60px;
+    height: 60px;
+    background-image: url('/img/dino.png');
+    position: absolute;
+    bottom: 0;
+}
+
+.cactus {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    background-image: url('/img/cactus.png');
+}
+
+.game-over{
+    text-align: center;
+    color: #666666;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0;
+    }
+}
+
+.background {
+    position: absolute;
+    bottom: 0;
+    background-image: url('/img/background.png');
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear ;
+    width: 100%;
+    height: 200px;
+}
+
+.btn{
+    border: 1px solid #666666;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: white ;
+    cursor: pointer;
+}
+.btn.start{
+    width: 260px;
+    font-weight: bold;
+    background-color: #606060;
+    color: white;
+}
+.btn:hover{
+    background-color: #666666;
+    color: white;
+}
+
+
+.btn.icone{
+    background-color: white ;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 10px;
+    border: 0;
+    cursor: pointer;
+}
+.btn.icone:hover{
+    border: 1px solid #666666 ;
+    color: blue;
+}
+
+.btn.icone img {
+    padding: 0;
+    margin: 0;
+    width: 40px;
+}
+.gif-espace{
+    width: 200px;
+}
+.container{
+    border: 1px dashed #666666;
+    padding-top: 10px;
+    height: 468px;
+
+}
+
+.start{
+    align-items: center;
+    flex: auto;
+}
